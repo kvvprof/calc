@@ -1,0 +1,113 @@
+/** @format */
+
+@import-normalize;
+@import url('https://fonts.googleapis.com/css2?family=Gantari:ital,wght@0,200;0,600;1,400&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	outline: none;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 14px;
+	font-weight: 400;
+	font-family: 'Gantari', sans-serif;
+	color: var(--dark-text-color);
+}
+
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+a,
+a:visited,
+a:hover,
+a:focus,
+a:active {
+	color: inherit;
+	outline: none;
+	text-decoration: none;
+}
+
+input,
+button,
+textarea,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: inherit;
+	font-weight: 400;
+}
+
+textarea {
+	resize: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+ul li {
+	list-style: none;
+}
+
+:root {
+	--dark-text-color: #626872;
+	--light-text-color: #a8aeae;
+}
+
+#root {
+	width: 100%;
+	height: 100%;
+}
+
+.calc-button {
+	border-radius: 100%;
+	font-size: 35px;
+	padding: 10px;
+	width: 70px;
+	height: 70px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 13.3px;
+	margin-bottom: 13.3px;
+	font-weight: 200;
+}
+
+.calc-button:nth-child(4n + 4) {
+	margin-right: 0;
+}
+
+.calc-button--clicked {
+	opacity: 0.5;
+}
+
+@media screen and (max-width: 360px) {
+	.calc-button {
+		width: 52px;
+		height: 52px;
+	}
+}

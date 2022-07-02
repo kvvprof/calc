@@ -1,0 +1,85 @@
+.clear {
+	background: url('../../assets/clear.png');
+	background-color: #f2bb4e;
+	background-position: center;
+	background-size: 25%;
+	background-repeat: no-repeat;
+	box-shadow: 2px 2px 5px #f2bb4e;
+	color: #fff;
+}
+
+.plus-minus {
+	background: url('../../assets/plus-minus.png');
+}
+
+.backspace {
+	background: url('../../assets/backspace.png');
+	background-size: 40% !important;
+}
+
+.wrapper--dark .plus-minus, .wrapper--dark .backspace {
+	background-color: #866240;
+	box-shadow: 2px 2px 5px #A8916A;
+}
+
+.backspace,
+.plus-minus {
+	background-color: #f5f1e6;
+	background-position: center;
+	background-size: 30%;
+	background-repeat: no-repeat;
+	box-shadow: 2px 2px 5px #ceb781;
+	color: #ceb781;
+}
+
+.divide {
+	background: url('../../assets/divide.png');
+	background-size: 30%;
+}
+
+.multiply {
+	background: url('../../assets/multiply.png');
+	background-size: 30%;
+}
+
+.minus {
+	background: url('../../assets/minus.png');
+	background-size: 25%;
+}
+
+.plus {
+	background: url('../../assets/plus.png');
+	background-size: 25%;
+}
+
+.multiply,
+.minus,
+.plus,
+.divide {
+	background-color: #dfd5e7;
+	background-position: center;
+	background-repeat: no-repeat;
+	box-shadow: 2px 2px 5px #683796;
+	color: #683796;
+}
+
+.wrapper--dark .multiply,
+.wrapper--dark .minus,
+.wrapper--dark .plus,
+.wrapper--dark .divide {
+	background-color: #8f6cc4;
+	box-shadow: 2px 2px 5px #7B36D2;
+}
+
+.result {
+	background: url('../../assets/equal.png');
+	background-size: 10%;
+	background-color: #8531da;
+	background-position: center;
+	background-repeat: no-repeat;
+	flex: 1;
+	margin-right: 0 !important;
+	border-radius: 50px !important;
+	box-shadow: 2px 2px 5px #683796;
+	color: #fff;
+}

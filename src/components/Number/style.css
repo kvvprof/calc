@@ -1,0 +1,10 @@
+.number {
+	background: #fff;
+	box-shadow: 4px 4px 10px #dfdfe0;
+	color: var(--text-color);
+}
+
+.wrapper--dark .number {
+	background: #36383a;
+	box-shadow: 4px 4px 10px #36383a;
+}

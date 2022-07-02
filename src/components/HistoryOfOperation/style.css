@@ -1,0 +1,7 @@
+.history-of-operation {
+	text-align: right;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}

@@ -1,0 +1,4 @@
+.list-of-buttons {
+	display: flex;
+	flex-wrap: wrap;
+}
