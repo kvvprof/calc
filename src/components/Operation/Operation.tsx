@@ -10,27 +10,27 @@ type OperationProps = {
 };
 
 const Operation: FC<OperationProps> = ({ operation, design }) => {
-  const dispatch = useAppDispatch()
-  const [isClicked, clickEffect] = useClickEffect()
+	const dispatch = useAppDispatch()
+	const [isClicked, clickEffect] = useClickEffect()
 
-  const operationHandler = () => {
-    clickEffect()
+	const operationHandler = () => {
+		clickEffect()
 
-    switch (operation) {
-      case 'clear':
-        dispatch(clear())
-        break
-      case '=':
-        dispatch(calculate())
-        break
-      default:
-        dispatch(addOperation(operation))
-        break
-    }
-  }
+		switch (operation) {
+		case 'clear':
+			dispatch(clear())
+			break
+		case '=':
+			dispatch(calculate())
+			break
+		default:
+			dispatch(addOperation(operation))
+			break
+		}
+	}
 
-  const setOperationName = () =>
-    operation === 'clear' ||
+	const setOperationName = () =>
+		operation === 'clear' ||
     operation === '+/-' ||
     operation === 'backspace' ||
     operation === '/' ||
@@ -38,19 +38,19 @@ const Operation: FC<OperationProps> = ({ operation, design }) => {
     operation === '-' ||
     operation === '+' ||
     operation === '='
-      ? ''
-      : operation
+			? ''
+			: operation
 
-  return (
-    <div
-      className={`calc-button ${design} ${
-        isClicked ? 'calc-button--clicked' : ''
-      }`}
-      onClick={operationHandler}
-    >
-      <p className={`${design}__name`}>{setOperationName()}</p>
-    </div>
-  )
+	return (
+		<div
+			className={`calc-button ${design} ${
+				isClicked ? 'calc-button--clicked' : ''
+			}`}
+			onClick={operationHandler}
+		>
+			<p className={`${design}__name`}>{setOperationName()}</p>
+		</div>
+	)
 }
 
 export default Operation

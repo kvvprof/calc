@@ -20,6 +20,7 @@
 		"semi": ["error", "never"],
 		"max-len": ["error", { "code": 120 }],
 		"jsx-quotes": ["error", "prefer-single"],
-		"quotes": ["error", "single"]
+		"quotes": ["error", "single"],
+		"indent": ["error", "tab"]
 	}
 }

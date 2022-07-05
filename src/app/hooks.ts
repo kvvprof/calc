@@ -9,16 +9,16 @@ export const useAppSelector: TypedUseSelectorHook<RootState> = useSelector
 
 // the effect of pressing the button
 export const useClickEffect = (
-  initialState: boolean = false
+	initialState: boolean = false
 ): [boolean, () => void] => {
-  const [isClicked, setIsClicked] = useState<boolean>(initialState)
+	const [isClicked, setIsClicked] = useState<boolean>(initialState)
 
-  const clickEffect = () => {
-    setIsClicked(true)
-    setTimeout(() => {
-      setIsClicked(false)
-    }, 100)
-  }
+	const clickEffect = () => {
+		setIsClicked(true)
+		setTimeout(() => {
+			setIsClicked(false)
+		}, 100)
+	}
 
-  return [isClicked, clickEffect]
+	return [isClicked, clickEffect]
 }

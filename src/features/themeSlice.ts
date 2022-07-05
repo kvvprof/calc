@@ -5,20 +5,20 @@ type ThemeState = {
 };
 
 const initialState: ThemeState = {
-  theme: localStorage.getItem('theme') || 'light',
+	theme: localStorage.getItem('theme') || 'light',
 }
 
 const themeSlice = createSlice({
-  name: 'theme',
-  initialState,
-  reducers: {
-    changeTheme: (state) => {
-      state.theme === 'light'
-        ? (state.theme = 'dark')
-        : (state.theme = 'light')
-      localStorage.setItem('theme', state.theme)
-    },
-  },
+	name: 'theme',
+	initialState,
+	reducers: {
+		changeTheme: (state) => {
+			state.theme === 'light'
+				? (state.theme = 'dark')
+				: (state.theme = 'light')
+			localStorage.setItem('theme', state.theme)
+		},
+	},
 })
 
 export const { changeTheme } = themeSlice.actions
