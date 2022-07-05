@@ -3,12 +3,12 @@ import { useAppDispatch, useClickEffect } from '../../app/hooks'
 import { addOperation, clear, calculate } from '../../features/calcSlice'
 import './style.css'
 
-type Operation = {
+type OperationProps = {
 	operation: string
 	style: string
 }
 
-const Operation: FC<Operation> = ({ operation, style }) => {
+const Operation: FC<OperationProps> = ({ operation, style }) => {
 	const dispatch = useAppDispatch()
 	const [isClicked, clickEffect] = useClickEffect()
 
@@ -41,9 +41,7 @@ const Operation: FC<Operation> = ({ operation, style }) => {
 			: operation
 
 	return (
-		<div
-			className={`calc-button ${style} ${isClicked ? 'calc-button--clicked' : ''}`}
-			onClick={operationHandler}>
+		<div className={`calc-button ${style} ${isClicked ? 'calc-button--clicked' : ''}`} onClick={operationHandler}>
 			<p className={`${style}__name`}>{setOperationName()}</p>
 		</div>
 	)
