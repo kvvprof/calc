@@ -1,11 +1,12 @@
 .clear {
+	color: #fff;
+
 	background: url('../../assets/clear.png');
 	background-color: #f2bb4e;
+	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 25%;
-	background-repeat: no-repeat;
 	box-shadow: 2px 2px 5px #f2bb4e;
-	color: #fff;
 }
 
 .plus-minus {
@@ -17,19 +18,21 @@
 	background-size: 40% !important;
 }
 
-.wrapper--dark .plus-minus, .wrapper--dark .backspace {
-	background-color: #866240;
-	box-shadow: 2px 2px 5px #A8916A;
-}
-
 .backspace,
 .plus-minus {
+	color: #ceb781;
+
 	background-color: #f5f1e6;
+	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 30%;
-	background-repeat: no-repeat;
 	box-shadow: 2px 2px 5px #ceb781;
-	color: #ceb781;
+}
+
+.wrapper--dark .plus-minus,
+.wrapper--dark .backspace {
+	background-color: #866240;
+	box-shadow: 2px 2px 5px #a8916a;
 }
 
 .divide {
@@ -56,11 +59,12 @@
 .minus,
 .plus,
 .divide {
-	background-color: #dfd5e7;
-	background-position: center;
-	background-repeat: no-repeat;
-	box-shadow: 2px 2px 5px #683796;
 	color: #683796;
+
+	background-color: #dfd5e7;
+	background-repeat: no-repeat;
+	background-position: center;
+	box-shadow: 2px 2px 5px #683796;
 }
 
 .wrapper--dark .multiply,
@@ -68,18 +72,21 @@
 .wrapper--dark .plus,
 .wrapper--dark .divide {
 	background-color: #8f6cc4;
-	box-shadow: 2px 2px 5px #7B36D2;
+	box-shadow: 2px 2px 5px #7b36d2;
 }
 
 .result {
-	background: url('../../assets/equal.png');
-	background-size: 10%;
-	background-color: #8531da;
-	background-position: center;
-	background-repeat: no-repeat;
 	flex: 1;
+
 	margin-right: 0 !important;
+
+	color: #fff;
+
+	background: url('../../assets/equal.png');
+	background-color: #8531da;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 10%;
 	border-radius: 50px !important;
 	box-shadow: 2px 2px 5px #683796;
-	color: #fff;
 }

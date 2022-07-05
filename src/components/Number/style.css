@@ -1,7 +1,8 @@
 .number {
+	color: var(--text-color);
+
 	background: #fff;
 	box-shadow: 4px 4px 10px #dfdfe0;
-	color: var(--text-color);
 }
 
 .wrapper--dark .number {

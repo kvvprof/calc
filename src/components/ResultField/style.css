@@ -1,14 +1,16 @@
 .result-field__value {
-	font-weight: 600;
-	font-size: 55px;
 	width: 100%;
-	text-align: right;
+
+	font-size: 55px;
+	font-weight: 600;
 	color: var(--dark-text-color);
+	text-align: right;
 }
 
 .wrapper--dark .result-field__value {
-	background: #424547;
 	color: var(--light-text-color);
+
+	background: #424547;
 }
 
 @media screen and (max-width: 360px) {
