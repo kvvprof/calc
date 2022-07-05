@@ -90,6 +90,7 @@ const calcSlice = createSlice({
 					.replaceAll('+-', '-')
 
 				const parse = (str: string) => {
+					// eslint-disable-next-line no-new-func
 					return Function(`'use strict'; return (${str})`)()
 				}
 
