@@ -5,10 +5,10 @@ import './style.css'
 
 type OperationProps = {
 	operation: string
-	style: string
+	design: string
 }
 
-const Operation: FC<OperationProps> = ({ operation, style }) => {
+const Operation: FC<OperationProps> = ({ operation, design }) => {
 	const dispatch = useAppDispatch()
 	const [isClicked, clickEffect] = useClickEffect()
 
@@ -41,8 +41,8 @@ const Operation: FC<OperationProps> = ({ operation, style }) => {
 			: operation
 
 	return (
-		<div className={`calc-button ${style} ${isClicked ? 'calc-button--clicked' : ''}`} onClick={operationHandler}>
-			<p className={`${style}__name`}>{setOperationName()}</p>
+		<div className={`calc-button ${design} ${isClicked ? 'calc-button--clicked' : ''}`} onClick={operationHandler}>
+			<p className={`${design}__name`}>{setOperationName()}</p>
 		</div>
 	)
 }
