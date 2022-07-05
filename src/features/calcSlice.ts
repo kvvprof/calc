@@ -15,7 +15,7 @@ const initialState: CalcState = {
 	displayedValue: '',
 	expression: '',
 	newExpression: false,
-	historyOfOperation: [],
+	historyOfOperation: []
 }
 
 const calcSlice = createSlice({
@@ -92,7 +92,7 @@ const calcSlice = createSlice({
 
 				state.historyOfOperation = [
 					...state.historyOfOperation,
-					state.expression + '=' + numberWithSpaces(parse(state.expression)),
+					state.expression + '=' + numberWithSpaces(parse(state.expression))
 				]
 
 				state.newExpression = true
@@ -101,8 +101,8 @@ const calcSlice = createSlice({
 		clear: (state) => {
 			state.currentValue = state.expression = state.displayedValue = ''
 			state.newExpression = false
-		},
-	},
+		}
+	}
 })
 
 export const { addNumber, addOperation, calculate, clear } = calcSlice.actions

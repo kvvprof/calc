@@ -5,9 +5,7 @@ import { useAppSelector } from '../../app/hooks'
 import './style.css'
 
 const ResultField = () => {
-	const displayedValue = useAppSelector(
-		(state) => state.calcSlice.displayedValue
-	)
+	const displayedValue = useAppSelector((state) => state.calcSlice.displayedValue)
 
 	return (
 		<section className='result-field'>

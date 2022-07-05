@@ -16,9 +16,7 @@ const ThemeSwitch = () => {
 				checked={theme === 'dark' ? true : false}
 				onChange={() => dispatch(changeTheme())}
 			/>
-			<p className='theme-switch__title'>
-        Switch to {theme === 'light' ? 'dark' : 'light'} theme
-			</p>
+			<p className='theme-switch__title'>Switch to {theme === 'light' ? 'dark' : 'light'} theme</p>
 		</section>
 	)
 }
