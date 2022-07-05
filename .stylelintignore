@@ -6,4 +6,5 @@
 *.svg
 *.png
 *.jpg
+*.html
 /node_modules
