@@ -1,5 +1,6 @@
 import React from 'react'
 import { FC } from 'react'
+
 import { useAppDispatch, useClickEffect } from '../../app/hooks'
 import { addNumber } from '../../features/calcSlice'
 import './style.css'

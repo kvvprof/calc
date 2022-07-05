@@ -28,13 +28,10 @@
 		"deploy": "gh-pages -d build",
 		"eject": "react-scripts eject",
 		"lint:css": "stylelint src",
-		"lint:css:fix": "npm run lint:css -- --fix"
-	},
-	"eslintConfig": {
-		"extends": [
-			"react-app",
-			"react-app/jest"
-		]
+		"lint:css:fix": "npm run lint:css -- --fix",
+		"lint:es": "eslint --ext .js,.jsx,.ts,.tsx src",
+		"lint:es:fix": "npm run lint:es -- --fix",
+		"prepare": "husky install"
 	},
 	"browserslist": {
 		"production": [
@@ -49,9 +46,11 @@
 		]
 	},
 	"devDependencies": {
+		"eslint-import-resolver-typescript": "^3.2.1",
 		"stylelint": "^14.9.1",
 		"stylelint-config-clean-order": "^0.8.0",
 		"stylelint-config-prettier": "^9.0.3",
-		"stylelint-config-standard": "^26.0.0"
+		"stylelint-config-standard": "^26.0.0",
+		"husky": "^8.0.0"
 	}
 }
